@@ -92,11 +92,53 @@
                 text-shadow: 3px 3px 5px rgb(128, 139, 193);
                 z-index: 1;
             }
+            .button {
+                background-color: #6ba4ff;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                width: 300px;
+            }
+
+            .menu {
+                position: relative;
+                display: inline-block;
+            }
+
+            .menu-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                width: 300px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .menu-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .menu-content a:hover {background-color: rgb(186, 186, 186);}
+            .menu:hover .menu-content {display: block;}
+            .menu:hover .button {background-color: #1d4872;}
         </style>   
     </head>
     <body>
         <div class="header">
             Маркина Ксения
+        </div>
+
+        <div class="menu">
+            <button class="button">Каталог</button>
+            <div class="menu-content">
+              <a href="#">Товары</a>
+              <a href="#">Картинки</a>
+              <a href="#">Новости</a>
+            </div>
         </div>
 
         <div class="content">
@@ -147,5 +189,6 @@
         <div class="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022 
         </div>
+         
     </body>
 </html>
